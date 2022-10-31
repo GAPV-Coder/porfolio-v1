@@ -1,5 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
+import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
@@ -15,6 +16,7 @@ function App() {
 					<Navbar />
 					<Home />
 					<Projects />
+					<About />
 				</>
 			</ThemeProvider>
 		</Router>
