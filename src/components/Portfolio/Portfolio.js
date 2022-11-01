@@ -15,8 +15,7 @@ const Portfolio = () => {
 				<SectionTitle number="03">Portfolio</SectionTitle>
 			</SectionHeading>
 			<StyledParagraph dark="true" textAlign="center">
-				Collection of projects that I have developed professionally for
-				Colombian companies.
+				Collection of projects I have developed in a professional environment.
 			</StyledParagraph>
 			<PlaygroundProjectContainer>
 				{projectsData.map(project => {
