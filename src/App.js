@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
+import Portfolio from "./components/Portfolio/Portfolio";
 import Projects from "./components/Projects/Projects";
 import GlobalStyles from "./components/Styles/Global";
 import { theme } from "./components/Styles/Theme";
@@ -19,6 +20,7 @@ function App() {
 					<Projects />
 					<About />
 					<Technologies />
+					<Portfolio />
 				</>
 			</ThemeProvider>
 		</Router>
