@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import GlobalStyles from "./components/Styles/Global";
 import { theme } from "./components/Styles/Theme";
+import Technologies from "./components/Technologies/Technologies";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					<Home />
 					<Projects />
 					<About />
+					<Technologies />
 				</>
 			</ThemeProvider>
 		</Router>

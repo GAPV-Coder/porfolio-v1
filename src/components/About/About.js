@@ -59,8 +59,6 @@ const About = () => {
 							Download Resume
 						</ResumeLink>
 					</Resume>
-					{/* <br />
-					<br /> */}
 				</AboutDetailsContainer>
 			</AboutContent>
 			<AboutContent>
