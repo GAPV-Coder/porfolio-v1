@@ -25,7 +25,7 @@ const toTop = () => {
 const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
-		<StyledFooter>
+		<StyledFooter id="contact">
 			<FooterSmallTitleWrapper>
 				<FooterSmallTitle>get in touch</FooterSmallTitle>
 			</FooterSmallTitleWrapper>

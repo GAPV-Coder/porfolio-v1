@@ -96,6 +96,20 @@ const Navbar = () => {
 						Portfolio
 					</StyledNavLinks>
 				</NavList>
+				<NavList>
+					<StyledNavLinks
+						to="contact"
+						smooth={true}
+						duration={0}
+						delay={0}
+						spy={true}
+						spyThrottle={0}
+						exact="true"
+						offset={-85.26}
+					>
+						Contact
+					</StyledNavLinks>
+				</NavList>
 			</NavMenuList>
 			<StyledCTA
 				href="mailto:gapereira@outlook.es "
@@ -113,7 +127,7 @@ const Navbar = () => {
 						>
 							<path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
 						</svg>
-						get in touch
+						Send an email
 					</span>
 				</span>
 			</StyledCTA>
