@@ -1,4 +1,5 @@
 import React from "react";
+
 const Message = ({ msg, bgColor }) => {
 	let styles = {
 		padding: "1rem",
@@ -6,7 +7,10 @@ const Message = ({ msg, bgColor }) => {
 		textAlign: "center",
 		color: "#fff",
 		fontWeight: "bold",
-		backgroundColor: bgColor
+		backgroundColor: bgColor,
+		width: "500px",
+		margin: "auto",
+		borderRadius: "2px"
 	};
 
 	return (
