@@ -12,7 +12,8 @@ const Projects = () => {
 				<SectionTitle number="01">Projects</SectionTitle>
 			</SectionHeading>
 			<StyledParagraph dark="true" textAlign="center">
-				Selected projects I've worked on recently.{" "}
+				Here is a list of projects I have recently worked on to improve my
+				skills and learn new technologies.{" "}
 				<StyledLink
 					href="https://github.com/GAPV-Coder"
 					target="_blank"
