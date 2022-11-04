@@ -107,9 +107,7 @@ const ContactForm = () => {
 				</form>
 			</StyledParagraph>
 			{loading && <Loader />}
-			{response && (
-				<Message msg="Your message has been sent!" bgColor="#e64e04" />
-			)}
+			{response && <Message msg="Your message has been sent!" />}
 		</>
 	);
 };

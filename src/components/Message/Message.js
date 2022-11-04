@@ -1,22 +1,11 @@
 import React from "react";
+import { StyledMessage } from "../Styles/Message.styled";
 
-const Message = ({ msg, bgColor }) => {
-	let styles = {
-		padding: "1rem",
-		marginBottom: "1rem",
-		textAlign: "center",
-		color: "#fff",
-		fontWeight: "bold",
-		backgroundColor: bgColor,
-		width: "500px",
-		margin: "auto",
-		borderRadius: "2px"
-	};
-
+const Message = ({ msg }) => {
 	return (
-		<div style={styles}>
+		<StyledMessage>
 			<p dangerouslySetInnerHTML={{ __html: msg }} />
-		</div>
+		</StyledMessage>
 	);
 };
 
