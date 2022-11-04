@@ -11,6 +11,7 @@ import {
 } from "../Styles/Navbar.styled";
 import logo from "../../assets/general/logo-2.png";
 import { animateScroll as scroll } from "react-scroll";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
 	const [stickyNav, setStickyNav] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
 		scroll.scrollToTop({ delay: 0, duration: 0 });
 	};
 
-	const MobileToggle = () => {
+	const toggle = () => {
 		setIsOpen(!isOpen);
 	};
 
@@ -131,11 +132,12 @@ const Navbar = () => {
 					</span>
 				</span>
 			</StyledCTA>
-			<Menu onClick={MobileToggle}>
+			<Menu onClick={toggle}>
 				<Line width="1.5rem" />
 				<Line />
 				<Line width="1.5rem" ml="0.5rem" />
 			</Menu>
+			<MobileMenu isOpen={isOpen} toggle={toggle} />
 		</StyledNavbar>
 	);
 };
