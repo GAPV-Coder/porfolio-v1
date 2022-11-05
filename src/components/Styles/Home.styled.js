@@ -23,6 +23,7 @@ export const Name = styled.h2`
 	}
 	@media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
 		font-size: 1.875rem;
+		text-align: center;
 	}
 `;
 
