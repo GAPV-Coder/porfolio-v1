@@ -1,11 +1,13 @@
 import React from "react";
-import { StyledMessage } from "../Styles/Message.styled";
+import { FadeInAnimation, StyledMessage } from "../Styles/Message.styled";
 
 const Message = ({ msg }) => {
 	return (
-		<StyledMessage>
-			<p dangerouslySetInnerHTML={{ __html: msg }} />
-		</StyledMessage>
+		<FadeInAnimation>
+			<StyledMessage>
+				<p dangerouslySetInnerHTML={{ __html: msg }} />
+			</StyledMessage>
+		</FadeInAnimation>
 	);
 };
 

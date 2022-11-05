@@ -1,4 +1,12 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+import { fadeInDown } from "react-animations";
+
+export const fadeAnimation = keyframes`${fadeInDown}`;
+
+export const FadeAnimation = styled.div`
+	animation: 2s ${fadeAnimation};
+	transition: transform 2s ease;
+`;
 
 export const HoverStyle = css`
 	content: "";

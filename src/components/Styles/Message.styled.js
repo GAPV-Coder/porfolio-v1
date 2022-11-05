@@ -1,4 +1,11 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { fadeIn } from "react-animations";
+
+export const FadeAnimation = keyframes`${fadeIn}`;
+
+export const FadeInAnimation = styled.div`
+	animation: 1.5s ${FadeAnimation};
+`;
 
 export const StyledMessage = styled.nav`
 	padding: 1rem;

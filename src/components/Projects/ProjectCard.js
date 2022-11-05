@@ -3,6 +3,7 @@ import { BiLinkExternal } from "react-icons/bi";
 import { GoMarkGithub } from "react-icons/go";
 import { IconContext } from "react-icons";
 import {
+	FadeAnimation,
 	LinkName,
 	ProjectCard,
 	ProjectCodeLink,
@@ -23,29 +24,31 @@ const ProjectCardComponent = ({
 	return (
 		<>
 			<IconContext.Provider value={{ size: "1rem" }}>
-				<ProjectCard>
-					<ProjectImage src={image} alt={title} />
-					<ProjectTransitionImage src={transitionImage} alt={title} />
-					<ProjectDetails>
-						<ProjectTitle>{title}</ProjectTitle>
-						<ProjectCodeLink
-							href={codeLink}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<GoMarkGithub />
-							<LinkName>Github Code</LinkName>
-						</ProjectCodeLink>
-						<ProjectLiveLink
-							href={liveLink}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<BiLinkExternal />
-							<LinkName>Live</LinkName>
-						</ProjectLiveLink>
-					</ProjectDetails>
-				</ProjectCard>
+				<FadeAnimation>
+					<ProjectCard>
+						<ProjectImage src={image} alt={title} />
+						<ProjectTransitionImage src={transitionImage} alt={title} />
+						<ProjectDetails>
+							<ProjectTitle>{title}</ProjectTitle>
+							<ProjectCodeLink
+								href={codeLink}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<GoMarkGithub />
+								<LinkName>Github Code</LinkName>
+							</ProjectCodeLink>
+							<ProjectLiveLink
+								href={liveLink}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<BiLinkExternal />
+								<LinkName>Live</LinkName>
+							</ProjectLiveLink>
+						</ProjectDetails>
+					</ProjectCard>
+				</FadeAnimation>
 			</IconContext.Provider>
 		</>
 	);
